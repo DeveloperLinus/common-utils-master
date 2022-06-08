@@ -8,45 +8,45 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_submit"
+            android:id="@+id/btn_get_storage_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="submit" />
+            android:text="获取存储地址A" />
 
         <Button
-            android:id="@+id/btn_increment_up_data"
+            android:id="@+id/btn_get_storage_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="监听增量更新" />
+            android:text="获取存储地址B" />
 
         <Button
-            android:id="@+id/btn_record_up_data"
+            android:id="@+id/btn_get_storage_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="监听通行记录上传" />
+            android:text="获取存储地址C" />
 
         <Button
-            android:id="@+id/btn_remove_increment_up"
+            android:id="@+id/btn_get_storage_d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="移除增量数据上传监听" />
+            android:text="获取存储地址D" />
 
         <Button
-            android:id="@+id/btn_remove_record_up"
+            android:id="@+id/btn_get_storage_e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="移除通行记录上传监听" />
+            android:text="获取存储地址E" />
 
         <Button
-            android:id="@+id/btn_test_observer"
+            android:id="@+id/btn_get_storage_f"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="测试Observer"/>
+            android:text="获取存储地址F"/>
 
         <Button
-            android:id="@+id/btn_test_bytes2hexStr"
+            android:id="@+id/btn_get_storage_g"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="字节数组转换为16进制字符串"/>
+            android:text="获取存储地址G"/>
     </LinearLayout>
 </layout>

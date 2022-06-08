@@ -4,6 +4,9 @@ import android.util.Log
 import com.linus.common.R
 import com.linus.common.base.BaseBindingActivity
 import com.linus.common.databinding.ActMainBinding
+import com.linus.commonlib.function.invoke.log
+import com.linus.commonlib.observer.ObserverTest
+import com.linus.commonlib.qrcode.StringTest
 import com.linus.commonlib.schedule.IncrementUpDataSchedule
 import com.linus.commonlib.schedule.RecordUpDataSchedule
 import com.linus.commonlib.thread.ThreadPoolProxyFactory
@@ -40,6 +43,14 @@ class MainActivity : BaseBindingActivity<ActMainBinding>() {
         }
         binding.btnRemoveRecordUp.setOnClickListener {
             RecordUpDataSchedule.removeTask()
+        }
+        binding.btnTestObserver.setOnClickListener {
+            ObserverTest.test01("aa123", "192.168.100.1")
+            ObserverTest.test01("bb123", "192.168.100.2")
+        }
+        binding.btnTestBytes2hexStr.setOnClickListener {
+            val hexStr = StringTest.bytesToHexStr(byteArrayOf(7, -58, 0, 0, -1, -118, 9, -3, -95))
+            log("转换后16进制字符串后->$hexStr")
         }
     }
 }

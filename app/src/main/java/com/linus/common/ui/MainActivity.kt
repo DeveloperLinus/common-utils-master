@@ -2,7 +2,6 @@ package com.linus.common.ui
 
 import android.util.Log
 import com.linus.common.R
-import com.linus.common.base.BaseBindingActivity
 import com.linus.common.databinding.ActMainBinding
 import com.linus.commonlib.function.invoke.log
 import com.linus.commonlib.observer.ObserverTest
@@ -10,6 +9,7 @@ import com.linus.commonlib.qrcode.StringTest
 import com.linus.commonlib.schedule.IncrementUpDataSchedule
 import com.linus.commonlib.schedule.RecordUpDataSchedule
 import com.linus.commonlib.thread.ThreadPoolProxyFactory
+import com.linus.commonlib.ui.BaseBindingActivity
 import java.util.concurrent.Callable
 
 class MainActivity : BaseBindingActivity<ActMainBinding>() {

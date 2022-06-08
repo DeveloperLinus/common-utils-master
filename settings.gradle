@@ -1,3 +1,7 @@
+include ':Faceplugin'
+include ':FaceMaintain'
+include ':FaceSerial'
+include ':FaceLauncher'
 include ':commonLib'
 include ':app'
 rootProject.name = "common-linus-master"

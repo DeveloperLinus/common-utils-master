@@ -11,8 +11,8 @@ android {
         applicationId "com.linus.common"
         minSdkVersion 18
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 169
+        versionName "3.1.9.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

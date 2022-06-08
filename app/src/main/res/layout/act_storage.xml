@@ -48,5 +48,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="获取存储地址G"/>
+
+        <Button
+            android:id="@+id/btn_get_install_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取安装包的包名"/>
     </LinearLayout>
 </layout>

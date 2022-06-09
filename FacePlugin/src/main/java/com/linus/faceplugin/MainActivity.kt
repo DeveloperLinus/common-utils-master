@@ -4,6 +4,7 @@ import android.content.Intent
 import android.util.Log
 import com.linus.bean.IFaceData
 import com.linus.commonlib.ui.BaseBindingActivity
+import com.linus.commonlib.utils.log
 import com.linus.faceplugin.databinding.ActMainBinding
 import com.linus.faceplugin.message.BindMessageManager
 
@@ -21,6 +22,14 @@ class MainActivity : BaseBindingActivity<ActMainBinding>(){
             val iFaceData = IFaceData(intent)
             val result = BindMessageManager.sendMessage2Maintain(iFaceData)
             Log.d("huqinghui", "业务程序接收到维护程序回复的消息->${result?.intent?.getStringExtra("message")}")
+        }
+
+        binding.btnSendMessageToSerial.setOnClickListener {
+            val intent = Intent()
+            intent.putExtra("KEY", "FacePlugin发送消息给FaceSerial")
+            val iFaceData = IFaceData(intent)
+            val result = BindMessageManager.sendMessage2Serial(iFaceData)
+            log( "FacePlugin接收到FaceSerial回复的消息->${result?.intent?.getStringExtra("message")}")
         }
     }
 }

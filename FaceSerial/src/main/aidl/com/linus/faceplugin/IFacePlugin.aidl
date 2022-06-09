@@ -1,13 +1,12 @@
-// IFaceLauncher.aidl
-package com.linus.facelauncher;
+// IFacePlugin.aidl
+package com.linus.faceplugin;
 
 // Declare any non-default types here with import statements
-
-interface IFaceLauncher {
+import com.linus.bean.IFaceData;
+interface IFacePlugin {
     /**
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.
      */
-    String getVersion();
-    String getVersionName();
+    IFaceData sendMessage(in IFaceData message);
 }

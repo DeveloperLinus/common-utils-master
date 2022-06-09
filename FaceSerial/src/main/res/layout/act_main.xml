@@ -13,15 +13,9 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/btn_send_message_to_maintain"
+            android:id="@+id/btn_send_message_to_plugin"
             android:layout_width="wrap_content"
-            android:text="发送消息给维护程序"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/btn_send_message_to_serial"
-            android:layout_width="wrap_content"
-            android:text="发送消息给通讯程序"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="发送消息也业务程序" />
     </LinearLayout>
 </layout>

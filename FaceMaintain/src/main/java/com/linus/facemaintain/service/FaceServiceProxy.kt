@@ -13,7 +13,7 @@ class FaceServiceProxy : Service() {
     private val maintain = object : IFaceMaintain.Stub() {
         override fun sendMessage(message: IFaceData): IFaceData {
             val key = message.intent.getStringExtra("KEY")
-            Log.d("huqinghui", "获取到的key->$key")
+            Log.d("huqinghui", "维护程序接收到key->$key")
             message.intent.putExtra("message", "维护程序回复消息111")
             return message
         }

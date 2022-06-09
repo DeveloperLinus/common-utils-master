@@ -12,6 +12,7 @@ import java.util.*
 
 object BindMessageManager {
     private var maintainBindMessage: MaintainBindMessage? = null
+    private var  serialBindMessage: SerialBindMessage? = null
     private val mBindMessageList: ArrayList<BaseBindMessage> =
         ArrayList()
 
@@ -24,6 +25,8 @@ object BindMessageManager {
     private fun initData() {
         maintainBindMessage = MaintainBindMessage()
         mBindMessageList.add(maintainBindMessage!!)
+        serialBindMessage = SerialBindMessage()
+        mBindMessageList.add(serialBindMessage!!)
     }
 
     private fun initBind() {
@@ -81,5 +84,10 @@ object BindMessageManager {
     @Throws(RemoteException::class)
     fun sendMessage2Maintain(data: IFaceData): IFaceData? {
         return maintainBindMessage?.sendMessage(data)
+    }
+
+    @Throws(RemoteException::class)
+    fun sendMessage2Serial(data: IFaceData): IFaceData? {
+        return serialBindMessage?.sendMessage(data)
     }
 }

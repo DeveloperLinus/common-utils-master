@@ -3,7 +3,7 @@
 
 ##### 进程间通讯AIDL
 
-![img](https://github.com/DeveloperLinus/common-utils-master/blob/main/screenshots/16548262902687.png)
+![img](/screenshots/16548262902687.png)
 ![1654826440277](https://github.com/DeveloperLinus/common-utils-master/tree/main/screenshots/1654826440277.png)
 ![16548266017752](https://github.com/DeveloperLinus/common-utils-master/tree/main/screenshots/16548266017752.png)
 ![16548266353727](https://github.com/DeveloperLinus/common-utils-master/tree/main/screenshots/16548266353727.png)

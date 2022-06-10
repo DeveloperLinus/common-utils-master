@@ -8,11 +8,13 @@ import android.os.SystemClock
 import com.linus.bean.IFaceData
 import com.linus.commonlib.base.BaseBindMessage
 import com.linus.commonlib.storage.UiUtils
+import com.linus.test.SerialBindMessage2
 import java.util.*
 
 object BindMessageManager {
     private var maintainBindMessage: MaintainBindMessage? = null
     private var  serialBindMessage: SerialBindMessage? = null
+    private var serialBindMessage2: SerialBindMessage2? = null
     private val mBindMessageList: ArrayList<BaseBindMessage> =
         ArrayList()
 
@@ -27,6 +29,8 @@ object BindMessageManager {
         mBindMessageList.add(maintainBindMessage!!)
         serialBindMessage = SerialBindMessage()
         mBindMessageList.add(serialBindMessage!!)
+        serialBindMessage2 = SerialBindMessage2()
+        mBindMessageList.add(serialBindMessage2!!)
     }
 
     private fun initBind() {
@@ -89,5 +93,10 @@ object BindMessageManager {
     @Throws(RemoteException::class)
     fun sendMessage2Serial(data: IFaceData): IFaceData? {
         return serialBindMessage?.sendMessage(data)
+    }
+
+    @Throws(RemoteException::class)
+    fun sendMessage2Serial(data: com.linus.test.IFaceData): com.linus.test.IFaceData? {
+        return serialBindMessage2?.sendMessage(data)
     }
 }

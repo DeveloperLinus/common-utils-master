@@ -31,5 +31,13 @@ class MainActivity : BaseBindingActivity<ActMainBinding>(){
             val result = BindMessageManager.sendMessage2Serial(iFaceData)
             log( "FacePlugin接收到FaceSerial回复的消息->${result?.intent?.getStringExtra("message")}")
         }
+
+        binding.btnSendMessageToSerial2.setOnClickListener {
+            val intent = Intent()
+            intent.putExtra("KEY", "FacePlugin发送消息2给FaceSerial")
+            val iFaceData = com.linus.test.IFaceData(intent)
+            val result = BindMessageManager.sendMessage2Serial(iFaceData)
+            log("FacePlugin接收到FaceSerial回复的消息->${result?.intent?.getStringExtra("message")}")
+        }
     }
 }

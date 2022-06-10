@@ -23,5 +23,11 @@
             android:layout_width="wrap_content"
             android:text="发送消息给通讯程序"
             android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_send_message_to_serial2"
+            android:layout_width="wrap_content"
+            android:text="发送消息给通讯程序2"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </layout>

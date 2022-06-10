@@ -16,6 +16,12 @@
             android:id="@+id/btn_send_message_to_plugin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="发送消息也业务程序" />
+            android:text="发送消息给FacePlugin1" />
+
+        <Button
+            android:id="@+id/btn_send_message_to_plugin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送消息给FacePlugin2" />
     </LinearLayout>
 </layout>

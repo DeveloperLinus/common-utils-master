@@ -25,6 +25,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
+        <service
+            android:name="com.linus.test.SerialService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.linus.serial.SerialService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

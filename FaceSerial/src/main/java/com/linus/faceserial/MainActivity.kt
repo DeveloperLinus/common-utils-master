@@ -18,5 +18,11 @@ class MainActivity : BaseBindingActivity<ActMainBinding>(){
             val result = PluginHelper.sendMessage("KEY", "数据来自FaceSerial")
             log("FaceSerial接收到FacePlugin的回复消息, key->${result?.intent?.getStringExtra("message")}")
         }
+
+        binding.btnSendMessageToPlugin2.setOnClickListener {
+            log("FaceSerial发送消息给FacePlugin")
+            val result =  com.linus.test.PluginHelper.sendMessage("KEY", "数据来自FaceSerial req")
+            log("FaceSerial 接收到FacePlugin的回复消息,key->${result?.intent?.getStringExtra("message")}")
+        }
     }
 }

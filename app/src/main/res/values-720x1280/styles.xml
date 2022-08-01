@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DtNameTextStyle">
+        <item name="android:background">@drawable/go_to_dts_name_pt_bg</item>
+        <item name="android:layout_width">@dimen/dt_name_size</item>
+        <item name="android:layout_height">@dimen/dt_name_size</item>
+        <item name="android:layout_marginTop">22.5dp</item>
+        <item name="android:layout_marginBottom">22.5dp</item>
+        <item name="android:layout_marginStart">27dp</item>
+        <item name="android:layout_marginEnd">2.7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">54sp</item>
+    </style>
+</resources>

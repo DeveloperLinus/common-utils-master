@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_device_exception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备异常" />
+        <Button
+            android:id="@+id/btn_auth_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="认证失败" />
+        <Button
+            android:id="@+id/btn_pt_auth_success_result1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通用户认证成功方案一" />
+        <Button
+            android:id="@+id/btn_pt_auth_success_result2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通用户认证成功方案二" />
+        <Button
+            android:id="@+id/btn_vip_auth_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIP用户认证成功" />
+        <Button
+            android:id="@+id/btn_appointment_dt_vip_result1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIP用户单个召梯方案一" />
+
+        <Button
+            android:id="@+id/btn_appointment_dt_vip_result2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIP用户单个召梯方案二" />
+        <Button
+            android:id="@+id/btn_appointment_dt_pt_result1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通用户单个召梯方案一" />
+        <Button
+            android:id="@+id/btn_appointment_dt_pt_result2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通用户单个召梯方案二" />
+
+        <Button
+            android:id="@+id/btn_appointment_many_dt_pt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通用户多电梯召梯" />
+
+        <Button
+            android:id="@+id/btn_pt_go_to_select_dts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通用户派梯" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:padding="5dp"
+        android:id="@+id/lou_ceng_tv"
+        android:background="@drawable/lou_ceng_vip_bg"
+        android:layout_width="@dimen/lou_ceng_tv_size"
+        android:layout_marginTop="@dimen/lou_ceng_tv_margin_top"
+        android:layout_marginBottom="@dimen/lou_ceng_tv_margin_bottom"
+        android:gravity="center"
+        android:text="13"
+        android:textSize="@dimen/lou_ceng_tv_text_size"
+        android:layout_height="@dimen/lou_ceng_tv_size"/>
+
+</RelativeLayout>
+</layout>

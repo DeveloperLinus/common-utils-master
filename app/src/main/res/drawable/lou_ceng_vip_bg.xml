@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+
+    <stroke android:color="@color/dt_rs_vip_text"
+            android:width="@dimen/lou_ceng_vip_bg_width"/>
+
+</shape>

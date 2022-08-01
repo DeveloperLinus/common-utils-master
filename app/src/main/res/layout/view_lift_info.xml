@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_mode"
+        android:layout_marginTop="@dimen/tv_mode_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/tv_mode_text_size"
+        android:textColor="@color/dt_rs_pt_text"
+        android:text="@string/gf_lift"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_marginTop="@dimen/top_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/lift_top_text_text_size"
+        android:textColor="@color/dt_rs_pt_text"
+        android:text="@string/gf_lift_bo_select"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_marginTop="@dimen/lift_bottom_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/lift_bottom_text_text_size"
+        android:text="@string/gf_lift_bo_select_en"
+        android:textColor="@color/dt_rs_pt_text"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_floors"
+        android:layout_marginStart="@dimen/ll_floors_margin_start"
+        android:layout_marginEnd="@dimen/ll_floors_margin_end"
+        android:layout_marginTop="@dimen/ll_floors_margin_top"
+        android:background="@drawable/dt_info_line_bg"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingStart="@dimen/ll_floors_tv_padding_start"
+            android:paddingEnd="@dimen/ll_floors_tv_padding_end"
+            android:background="@color/black"
+            android:text="@string/lift_floors"
+            android:textColor="@color/dt_rs_pt_text"
+            android:textSize="@dimen/lift_ll_floor_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="@dimen/lou_ceng_rl_margin_top"
+        android:layout_marginStart="@dimen/lou_ceng_rl_margin_start"
+        android:layout_marginEnd="@dimen/lou_ceng_rl_margin_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/lou_ceng_gv"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="none"
+            android:layout_width="@dimen/floor_content_width"
+            android:numColumns="3"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginBottom="@dimen/dt_name_pt_bg_margin_bottom"
+            android:padding="@dimen/dt_name_pt_bg_padding"
+            android:background="@drawable/dt_name_pt_bg"
+            android:visibility="visible"
+            android:id="@+id/iv_empty_floor"
+            android:layout_gravity="center"
+            android:src="@drawable/itl_empty_floor"
+            android:layout_width="@dimen/empty_floor_size"
+            android:layout_height="@dimen/empty_floor_size"/>
+    </FrameLayout>
+
+</LinearLayout>
+</layout>

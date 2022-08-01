@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_marginTop="@dimen/appointment_dt_top_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/appointment_dt_top_text_text_size"
+        android:textColor="@color/dt_rs_vip_text"
+        android:text="@string/select_floor"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_marginTop="@dimen/bottom_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/bottom_text_text_size"
+        android:text="@string/select_floor_en"
+        android:textColor="@color/dt_rs_vip_text"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:layout_marginBottom="@dimen/lou_ceng_gv_margin_bottom"
+            android:id="@+id/lou_ceng_gv"
+            android:layout_marginTop="@dimen/lou_ceng_gv_margin_top"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none"
+            android:layout_width="@dimen/lou_ceng_gv_width"
+            android:numColumns="3"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginBottom="@dimen/appointment_dt_iv_voice_margin_bottom"
+            android:id="@+id/iv_voice"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/itl_vip_voice"
+            android:layout_width="@dimen/appointment_dt_iv_voice_width"
+            android:layout_height="130dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

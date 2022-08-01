@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dt_rs_vip_text_text_size"
+        android:text="--"
+        android:layout_marginTop="@dimen/dt_rs_vip_text_margin_top"
+        android:textColor="@color/dt_rs_vip_text"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/zhong_jia_text"
+        android:layout_marginTop="@dimen/zhong_jia_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/zhong_jia_text_text_size"
+        android:textColor="@color/dt_rs_vip_text"
+        android:text="请前往指定电梯"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_marginTop="@dimen/bottom_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/bottom_text_text_size"
+        android:text="please go to the designated elevator"
+        android:textColor="@color/dt_rs_vip_text"
+        android:layout_height="wrap_content"/>
+
+<com.linus.liu.showruzeltui.ShowDtNameLayout
+    android:id="@+id/dt_name_mll"
+    android:layout_marginTop="@dimen/dt_name_mll_margin_top"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
+</layout>

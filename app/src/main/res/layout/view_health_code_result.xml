@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/health_code_info_ll"
+        android:layout_width="505dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginEnd="5dp"
+            android:layout_width="500dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/health_code_result_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/code_health_title_tv"
+                android:layout_width="match_parent"
+                android:text="国康码"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="#2DA46A"
+                android:background="@drawable/health_code_ruselt_green"
+                android:layout_height="60dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="姓名"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:text="姓名"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#777777"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="身份证"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/id_card_tv"
+                    android:layout_width="wrap_content"
+                    android:text="姓名"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#777777"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:background="#E6E6E6"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="match_parent"
+                android:text="2021-08-13 09:26:46"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#333333"
+                android:textSize="32sp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:layout_marginTop="20dp"
+                android:id="@+id/heal_code_ui"
+                android:layout_width="220dp"
+                android:background="#56EA7A"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="220dp"/>
+
+
+            <View
+                android:background="#E6E6E6"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="核酸检测："
+                        android:textColor="#777777"
+                        android:textSize="20dp"
+
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/he_suan_r_tv"
+                        android:layout_width="wrap_content"
+                        android:text="阴性"
+                        android:textColor="#333333"
+
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/he_suan_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#333333"
+
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/vip_icon"
+            android:layout_width="98dp"
+            android:background="@drawable/health_code_vip_icon"
+            android:layout_height="108dp"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/sao_health_code_ll"
+        android:layout_width="500dp"
+        android:visibility="gone"
+        android:background="@drawable/health_code_need_sao_bg"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_height="230dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:background="@drawable/health_code_qr_icon"
+            android:layout_height="80dp"/>
+        <TextView
+            android:textColor="@color/healcode_while"
+            android:layout_width="wrap_content"
+            android:textSize="60sp"
+            android:text="请扫健康码"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/need_mast_ll"
+        android:layout_width="500dp"
+        android:background="@drawable/health_code_result_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:background="@drawable/need_mask_icon"
+            android:layout_marginTop="50dp"
+            android:layout_height="350dp"/>
+        <TextView
+            android:textColor="#049FFF"
+            android:layout_width="wrap_content"
+            android:textSize="60sp"
+            android:layout_marginBottom="50dp"
+            android:text="请佩戴口罩"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

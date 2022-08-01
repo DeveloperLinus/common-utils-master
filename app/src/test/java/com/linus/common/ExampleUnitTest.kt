@@ -1,5 +1,6 @@
 package com.linus.common
 
+import android.text.TextUtils
 import org.junit.Test
 
 import org.junit.Assert.*

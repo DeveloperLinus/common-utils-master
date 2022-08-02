@@ -1,3 +1,5 @@
+include ':contentresolverapp'
+include ':contentproviderapp'
 include ':Faceplugin'
 include ':FaceMaintain'
 include ':FaceSerial'

@@ -1,4 +1,4 @@
-package com.linus.common.kotlin.abstract
+package com.linus.common.kotlin.proxyInterface
 
 open class Bird (var name:String, val sex:Int = MALE) {
 //public var sexName:String

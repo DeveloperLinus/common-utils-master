@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_auth_result"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/rl_bg_auth_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bg_auth_result_margin_top"
+            android:background="@mipmap/bg_auth_result_720_1280">
+
+
+            <ImageView
+                android:id="@+id/iv_auth_result_rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ic_auth_fail_rectangle_margin_top"
+                android:src="@mipmap/ic_auth_fail_rectangle_720_1280" />
+
+
+            <ImageView
+                android:id="@+id/iv_auth_result_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ic_auth_fail_circle_margin_top"
+                android:src="@mipmap/ic_auth_fail_circle_720_1280" />
+
+
+            <ImageView
+                android:id="@+id/iv_auth_result_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ic_auth_fail_margin_top"
+                android:src="@mipmap/ic_cross_logo_720_1280" />
+
+            <!--使用该方式首次启动耗时483 ms，后面启动耗时30ms内-->
+            <com.itlong.gfyluiapp.PangMenZhengDaoTextView
+                android:id="@+id/tv_auth_result_title"
+                style="@style/auth_result_title_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/tv_auth_fail_result_msg_margin_top"
+                android:text="@string/auth_fail_title" />
+
+
+            <TextView
+                android:id="@+id/tv_auth_result_sub_title"
+                style="@style/sub_auth_result_title_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/tv_auth_fail_sub_title_msg_margin_top"
+                android:text="@string/forbid_pass" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="auth_result_title_text_style">
+        <item name="android:textColor">#FFA424</item>
+        <item name="android:textSize">130sp</item>
+    </style>
+
+    <style name="sub_auth_result_title_text_style">
+        <item name="android:textColor">#FFA424</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+</resources>

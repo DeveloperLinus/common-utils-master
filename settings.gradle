@@ -1,3 +1,7 @@
+include ':DataStructure'
+include ':GfylUiapp'
+include ':gfylapp'
+include ':storageapp'
 include ':contentresolverapp'
 include ':contentproviderapp'
 include ':Faceplugin'

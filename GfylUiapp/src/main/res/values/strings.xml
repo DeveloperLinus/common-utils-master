@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GfylUiapp</string>
+    <string name="floor">楼</string>
+    <string name="go_to_dt">请前往指定电梯</string>
+    <string name="go_to_dt_en">please go to the designated elevator</string>
+
+    <string name="please_go">请通行</string>
+    <string name="auth_s">认证成功</string>
+    <string name="auth_s_en">Certification is successful</string>
+
+    <string name="call_dt_s">呼梯成功</string>
+    <string name="call_dt_s_en">Elevator call successful</string>
+
+
+    <string name="dt_busy">电梯繁忙</string>
+    <string name="pt_failed">派梯失败</string>
+    <string name="pl_try_again_later">请稍后再试</string>
+    <string name="pl_try_again_later_en">please try again later</string>
+
+    <string name="gf_lift">高峰模式</string>
+    <string name="gf_lift_bo_select">无法选层</string>
+    <string name="gf_lift_bo_select_en">Peak mode cannot select layers</string>
+    <string name="lift_floors">本次停靠楼层</string>
+    <string name="select_floor">选择您要到达的楼层</string>
+    <string name="select_floor_en">Select the floor you want to reach</string>
+    <string name="calibration_info">图像配准信息</string>
+    <string name="calibration_lens">校准</string>
+
+    <string name="auth_fail_title">认证失败</string>
+    <string name="forbid_pass">禁止通行</string>
+</resources>

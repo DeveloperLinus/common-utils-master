@@ -30,10 +30,6 @@
         <activity android:name=".ui.UIBackgroundAct"/>
         <activity android:name=".ui.ConcatAct"/>
         <activity android:name=".ui.InvokeAct"/>
-        <activity android:name=".ui.GaoFenYunLiAct"/>
-        <activity android:name=".ui.GaoFenYunLiUIAct"/>
-
-        <activity android:name=".ui.GaoFenUIAct"/>
         <activity
             android:name=".ui.UIAct"
             android:label="@string/app_name"

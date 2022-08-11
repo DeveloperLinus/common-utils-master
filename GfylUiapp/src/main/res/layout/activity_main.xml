@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_dt_pt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通用户召梯页面" />
+
+        <Button
+            android:id="@+id/btn_auth_fail_result_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授权失败页面" />
+    </LinearLayout>
+</layout>

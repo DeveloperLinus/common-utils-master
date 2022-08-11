@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="1dp"
+        android:layout_weight="2"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/top_text_text_size"
+        android:text="--楼"
+        android:textColor="@color/dt_rs_pt_text"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/zhong_jia_text"
+        android:layout_marginTop="@dimen/zhong_jia_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/zhong_jia_text_text_size"
+        android:textColor="@color/dt_rs_pt_text"
+        android:text="请前往指定电梯layout"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_marginTop="@dimen/bottom_text_margin_top"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/bottom_text_text_size"
+        android:text="please go to the designated elevator"
+        android:textColor="@color/dt_rs_pt_text"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/bottom_text_text_size"
+        android:gravity="center"
+        android:textColor="@color/dt_rs_pt_text"
+        android:layout_height="0dp"/>
+    <RelativeLayout
+        android:layout_width="@dimen/floor_circle_direct"
+        android:layout_height="@dimen/floor_circle_direct">
+        <ImageView
+            android:layout_width="match_parent"
+            android:background="@drawable/dt_name_pt_bg"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:id="@+id/dt_name"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:text="2"
+            android:textColor="@color/dt_rs_pt_text"
+            android:textSize="@dimen/dt_name_text_size"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/dt_image"
+
+            android:layout_width="@dimen/dt_image_size"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/dt_image_size"/>
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_weight="2"
+        android:layout_height="0dp"/>
+
+
+
+</LinearLayout>
+</layout>
